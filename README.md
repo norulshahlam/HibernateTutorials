@@ -10,19 +10,21 @@ An ORM tool simplifies the data creation, data manipulation and data access. It 
 hi shah. if you are revisiting this since your last use was some time ago, i hope this helps to guide u so u can recap in the
 fastest way possible. also how to use hibernate from scratch.
 
-make sure you have installed mysql, and the db is running!
+a. make sure you have installed mysql, and the db is running!
+b. after mysql installation, when configure server, make sure port number is same as the one in config.
+c. password defined in mysql server is same as in config.
+d. create db using mysql
+e. create db in mysql. run this query in mysql:
 
-0. create db using mysql
-
-create database Hibernate;
+create database Hibernate:
 use Hibernate;
 select \* from alien;
 
-1. hibernate core orm & mysql connector in pom.xml. make sure mysql conn is same version as mysql server version
-2. create hibernate.config fro hivernate config settings
-3. create entity by creating ALien class with POJO. indicate @Entity, @id
-4. in main.class, use 5 lines for initiating hibernate
-5. in main, create obj of Alien, insert data, then save & commit object.
+f. hibernate core orm & mysql connector in pom.xml. make sure mysql conn is same version as mysql server version (the first 2 digits ie 8.0.xx)
+g. create hibernate.config from hibernate config settings
+h. create entity by creating ALien class with POJO. indicate @Entity, @id 4. in main.class, use 5 lines for initiating hibernate
+i. in main, create obj of Alien, insert data, then save & commit object.
+j. then run java. check in mysql if the data is updated
 
 visitng each package by order:
 DemoHib
